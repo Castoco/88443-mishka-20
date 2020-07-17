@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body class="page__body">
+    <header class="page_header">
+      <a href="index.html"  class="page-header__logo">
+        <img src="miska.jpg" width="86" height="35" alt="Магазин игрушек Мишка">
+      </a>
+      <nav class="main-nav">
+        <button type="button" class="main-nav__togle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main_nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="order.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item user-list__item--search">
+              <a href="search.html">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item user-list__item--basket">
+              <a href="basket.html">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Мягкие игрушки ручной работы</h1>
+      <header class="catalog-header">
+        <h2 class="catalog-header__title">Каталог товаров</h2>
+      </header>
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item rabbit">
+            <a href="rabbit.html" class="catalog__link">
+              <div class="catalog__description">
+                <img src="https://via.placeholder.com/260x195" alt="Зайчик-Попрыгайчик">
+                <h3 class="catalog__title">Зайчик-Попрыгайчик</h3>
+                <p class="catalog__term">Рост 30 см, вес 200 г</p>
+              </div>
+              <p class="catalog__price">
+                1200 руб.
+              </p>
+            </a>
+          </li>
+          <li class="catalog__item basket">
+            <a href="basket.html" class="catalog__link">
+              <div class="catalog__description">
+                <img src="https://via.placeholder.com/260x195" alt="Корзинка для белья">
+                <h3 class="catalog__title">Корзинка для белья</h3>
+                <p class="catalog__term">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <p class="catalog__price">
+                690 руб.
+              </p>
+            </a>
+          </li>
+          <li class="catalog__item basket-toys">
+            <a href="basket-toys.html" class="catalog__link">
+              <div class="catalog__description">
+                <img src="https://via.placeholder.com/260x195" alt="Большая корзинка для игрушек">
+                <h3 class="catalog__title">Большая корзинка для игрушек</h3>
+                <p class="catalog__term">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <p class="catalog__price">
+                1 500 руб.
+              </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">
+              Наш инстаграм
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">
+              Наш фэйсбук
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://twitter.com/htmlacademy_ru" class="social__link social__link--twitter">
+              Наш Твитер
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
