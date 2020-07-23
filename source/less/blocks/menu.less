@@ -1,0 +1,36 @@
+.menu {
+  outline: 2px solid royalblue;
+}
+
+.menu__list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.menu__item a {
+  color: @basic-white;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  padding-left:30px;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  padding-right: 160px;
+  display: block;
+}
+
+.menu__item:nth-of-type(odd) a {
+  background-color: @basic-green;
+  &:hover,
+  &:active {
+    background-color: @basic-green-light;
+  }
+}
+.menu__item:nth-of-type(even) a {
+  background-color: @basic-green-dark;
+  &:hover,
+  &:active {
+    background-color: @basic-green-darkness;
+  }
+}
