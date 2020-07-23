@@ -4,8 +4,8 @@
 
 .menu__list {
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .menu__item a {
@@ -13,7 +13,7 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
-  padding-left:30px;
+  padding-left: 30px;
   padding-top: 24px;
   padding-bottom: 31px;
   padding-right: 160px;
@@ -22,13 +22,16 @@
 
 .menu__item:nth-of-type(odd) a {
   background-color: @basic-green;
+
   &:hover,
   &:active {
     background-color: @basic-green-light;
   }
 }
+
 .menu__item:nth-of-type(even) a {
   background-color: @basic-green-dark;
+
   &:hover,
   &:active {
     background-color: @basic-green-darkness;
