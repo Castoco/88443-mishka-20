@@ -2,12 +2,14 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a href="index.html"  class="page-header__logo">
-        <img src="https://via.placeholder.com/86x35" alt="Магазин игрушек Мишка">
+        <img src="img/logo-mobile.svg" width="86" hieght="35" alt="Магазин игрушек Мишка">
       </a>
       <nav class="main-nav">
         <button type="button" class="main-nav__togle">
@@ -35,8 +37,8 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Мягкие игрушки ручной работы</h1>
-      <header class="form-header">
-        <h2 class="form-header__title">Вязание на заказ</h2>
+      <header class="page-main__header">
+        <h2 class="page-main__title">Вязание на заказ</h2>
       </header>
       <section class="form">
         <form class="form__order" action="https://echo.htmlacademy.ru" method="post">
@@ -100,11 +102,11 @@
             </ul>
           </fieldset>
             <fieldset class="form__fieldset">
-              <legend class="form__legend form__legend__phone">Тел</legend>
+              <legend class="form__legend form__legend--phone">Тел</legend>
               <input type="text" class="form__input form__input--text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required maxlength="15">
             </fieldset>
             <fieldset class="form__fieldset">
-              <legend class="form__legend form__legend__mail">E-mail</legend>
+              <legend class="form__legend form__legend--mail">E-mail</legend>
               <input type="text" class="form__input form__input--text" name="Email" placeholder="Ваш E-mail*" required maxlength="30">
             </fieldset>
             <fieldset class="form__fieldset">
