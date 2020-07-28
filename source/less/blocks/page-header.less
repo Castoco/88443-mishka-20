@@ -1,11 +1,20 @@
 .page-header {
   outline: 2px solid coral;
+  .phone-wrapper;
 }
 
 .page-header__logo {
   height: 79px;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: @tablet-width) {
     height: 89px;
+    width: 320px;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: @desektop-width) {
+    justify-content: center;
   }
 }

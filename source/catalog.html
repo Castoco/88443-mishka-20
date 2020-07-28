@@ -9,30 +9,28 @@
   <body class="page__body">
     <header class="page-header">
       <nav class="main-nav">
+        <a href="index.html" class="page-header__logo">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин игрушек Мишка">
+        </a>
         <button type="button" class="main-nav__togle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <a href="index.html"  class="page-header__logo">
-            <img src="img/logo-mobile.svg" width="86" hieght="35" alt="Магазин игрушек Мишка">
-        </a>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a>Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form-order.html">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item user-list__item--search">
-              <a href="search.html">Поиск по сайту</a>
-            </li>
-            <li class="user-list__item user-list__item--basket">
-              <a href="basket.html">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form-order.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item user-list__item--search">
+            <a href="search.html">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item user-list__item--basket">
+            <a href="basket.html">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
@@ -44,10 +42,10 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <article class="product-card">
+              <a href="rabbit.html" class="product-card__link">
+                <img src="https://via.placeholder.com/260x195" alt="Зайчик-Попрыгайчик">
+              </a>
               <div class="product-card__description">
-                <a href="rabbit.html" class="product-card__link">
-                  <img src="https://via.placeholder.com/260x195" alt="Зайчик-Попрыгайчик">
-                </a>
                 <a href="rabbit.html" class="product-card__link">
                   <h3 class="product-card__title">Зайчик-Попрыгайчик</h3>
                 </a>
@@ -58,10 +56,10 @@
           </li>
           <li class="catalog__item">
             <article class="product-card">
+              <a href="rabbit.html" class="product-card__link">
+                <img src="https://via.placeholder.com/260x195" alt="Корзинка для белья">
+              </a>
               <div class="product-card__description">
-                <a href="rabbit.html" class="product-card__link">
-                  <img src="https://via.placeholder.com/260x195" alt="Корзинка для белья">
-                </a>
                 <a href="rabbit.html" class="product-card__link">
                   <h3 class="product-card__title">Корзинка для белья</h3>
                 </a>
@@ -72,10 +70,10 @@
           </li>
           <li class="catalog__item">
             <article class="product-card">
+              <a href="rabbit.html" class="product-card__link">
+                <img src="https://via.placeholder.com/260x195" alt="Большая корзинкадля игрушек">
+              </a>
               <div class="product-card__description">
-                <a href="rabbit.html" class="product-card__link">
-                  <img src="https://via.placeholder.com/260x195" alt="Большая корзинкадля игрушек">
-                </a>
                 <a href="rabbit.html" class="product-card__link">
                   <h3 class="product-card__title">Большая корзинка для игрушек</h3>
                 </a>
@@ -89,38 +87,43 @@
       <section class="production">
         <div class="production__wrapper">
           <article class="production-card">
-            <h3 class="production-card__title">Процесс производства</h3>
-            <img src="https://via.placeholder.com/260x155" alt="Процес вязания">
-            <p class="production-card__text">По просьбам наших любимых фолловеров мы сняли
-              для вас подробное видео о том, как появляются наши товары.</p>
-            <a href="buy.html" class="production-card__buy button">Сделать заказ</a>
+            <h3 class="production-card__title-top">Процесс производства</h3>
+            <img  class="production-card__video" src="https://via.placeholder.com/260x155" alt="Процес вязания">
+            <div class="production-card__text-wrapper">
+              <h3 class="production-card__title-bottom">Процесс производства</h3>
+              <p class="production-card__text">По просьбам наших любимых фолловеров мы сняли
+                для вас подробное видео о том, как появляются наши товары.</p>
+              <a href="buy.html" class="production-card__buy button">Сделать заказ</a>
+            </div>
           </article>
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">
-              Наш инстаграм
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">
-              Наш фэйсбук
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="https://twitter.com/htmlacademy_ru" class="social__link social__link--twitter">
-              Наш Твитер
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">
+                Наш инстаграм
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">
+                Наш фэйсбук
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://twitter.com/htmlacademy_ru" class="social__link social__link--twitter">
+                Наш Твитер
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </footer>
   </body>

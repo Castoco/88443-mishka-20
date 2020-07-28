@@ -7,6 +7,16 @@
     width: 321px;
     display: flex;
     justify-content: space-between;
+    order: 1;
+    align-items: flex-end;
+  }
+
+  @media (min-width: @desektop-width) {
+    width: 321px;
+    display: flex;
+    justify-content: space-between;
+    order: -1;
+    align-items: center;
   }
 }
 
@@ -21,7 +31,6 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    align-self: flex-end;
   }
 }
 
