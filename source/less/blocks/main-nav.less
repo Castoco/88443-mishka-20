@@ -1,11 +1,34 @@
 .main-nav {
   outline: 2px solid red;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav__wrapper {
   outline: 2px solid brown;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desektop-width) {
+    width: 1050px;
+  }
 }
 
 .main-nav__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.main-nav__togle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

@@ -1,9 +1,12 @@
 .contacts__heading {
-  .font(bold, 18px, 30px);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .contacts__item {
-  .font(normal, 15px, 30px);
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .contacts__email {
@@ -11,11 +14,20 @@
   border-bottom: 1px solid @basic-green;
 }
 
-.contacts__wrapper,
-.contacts__write {
+.contacts__wrapper {
+  outline: 2px solid grey;
   margin: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desektop-width) {
+    width: 1050px;
+  }
 }
 
 .contacts {
-  outline: 2px solid grey;
+  outline: 1px solid red;
 }

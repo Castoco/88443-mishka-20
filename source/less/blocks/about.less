@@ -1,6 +1,17 @@
 .about__wrapper {
   margin: 0 30px;
   outline: 2px solid salmon;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desektop-width) {
+    width: 1050px;
+  }
 }
 
 .about__title {

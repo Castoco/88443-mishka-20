@@ -2,16 +2,27 @@
   padding: 0;
   margin: 0;
   outline: 2px solid lightcyan;
+
+  @media (min-width: @tablet-width) {
+    width: 321px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .site-list__item {
-  margin-left: 76px;
-  margin-top: 28.5px;
-  margin-bottom: 26.5px;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: @basic-black;
+  margin-left: 76px;
+  margin-top: 28.5px;
+  margin-bottom: 26.5px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    align-self: flex-end;
+  }
 }
 
 .site-list__item a {
