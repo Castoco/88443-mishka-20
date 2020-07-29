@@ -11,6 +11,7 @@
 
   @media (min-width: @desektop-width) {
     width: 1050px;
+    position: relative;
   }
 }
 
@@ -23,5 +24,21 @@
 .main-nav__togle {
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.main-nav__info {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 300px;
+    order: 2;
+  }
+
+  @media (min-width: @desektop-width) {
+    width: 300px;
+    position: absolute;
+    right: -3px;
+    top: 106px;
   }
 }

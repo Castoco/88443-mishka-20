@@ -17,6 +17,7 @@
     justify-content: space-between;
     order: -1;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -36,4 +37,12 @@
 
 .site-list__item a {
   color: @basic-black;
+}
+
+.site-list__item--desektop {
+  display: none;
+
+  @media (min-width: @desektop-width) {
+    display: block;
+  }
 }
