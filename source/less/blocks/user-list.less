@@ -2,6 +2,19 @@
   padding: 0;
   margin: 0;
   outline: 2px solid lightgreen;
+
+  @media (min-width: @tablet-width) {
+    width: 330px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.user-list__item--search {
+  @media (min-width: @tablet-width) {
+    .visually-hidden;
+  }
 }
 
 .user-list__item {
@@ -12,6 +25,10 @@
   font-size: 17px;
   line-height: 24px;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .user-list__item a {

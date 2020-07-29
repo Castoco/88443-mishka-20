@@ -2,8 +2,22 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+  }
 }
 
 .features__item {
   .font(bold, 17px, 24px);
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: @desektop-width) {
+    width: 300px;
+  }
 }

@@ -1,6 +1,15 @@
 .product-card {
   outline: 2px solid blueviolet;
   margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desektop-width) {
+    flex-wrap: wrap;
+  }
 }
 
 .product-card__title {
@@ -16,5 +25,7 @@
 }
 
 .product-card__price {
-  .font(bold, 15px, 24px);
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
 }

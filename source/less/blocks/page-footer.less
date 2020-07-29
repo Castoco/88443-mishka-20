@@ -1,8 +1,18 @@
 .page-footer {
   background-color: @basic-grey;
+  .phone-wrapper;
 }
 
 .page-footer__social,
 .page-footer__copyright {
   margin: 0 30px;
+}
+
+.page-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
 }

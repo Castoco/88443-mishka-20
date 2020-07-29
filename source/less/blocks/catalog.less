@@ -2,8 +2,31 @@
   padding: 0;
   list-style: none;
   margin: 0 30px;
+  outline: 2px solid tomato;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desektop-width) {
+    width: 1050px;
+    justify-content: space-around;
+  }
 }
 
 .catalog {
   outline: 2px solid tomato;
+}
+
+.catalog__item {
+  @media (min-width: @tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: @desektop-width) {
+    width: 316px;
+  }
 }

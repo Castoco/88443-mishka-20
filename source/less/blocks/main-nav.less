@@ -1,11 +1,45 @@
 .main-nav {
   outline: 2px solid red;
-}
 
-.main-nav__wrapper {
-  outline: 2px solid brown;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desektop-width) {
+    width: 1050px;
+    position: relative;
+  }
 }
 
 .main-nav__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.main-nav__togle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__info {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 300px;
+    order: 2;
+  }
+
+  @media (min-width: @desektop-width) {
+    width: 300px;
+    position: absolute;
+    right: -3px;
+    top: 106px;
+  }
 }
