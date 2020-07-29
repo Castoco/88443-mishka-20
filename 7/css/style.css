@@ -1,0 +1,1155 @@
+@font-face {
+  font-family: "Opensans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Opensans"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+@font-face {
+  font-family: "Opensans";
+  font-style: bold;
+  font-weight: 700;
+  src: local("Opensans"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+.page__body {
+  background-color: #FFFFFF;
+  font-family: "Opensans", "Arial", sans-serif;
+  min-height: 100%;
+}
+.page {
+  height: 100%;
+}
+.page-footer {
+  background-color: #F1F1F1;
+}
+@media (max-width: 767px) {
+  .page-footer {
+    min-width: 320px;
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+.page-footer__social,
+.page-footer__copyright {
+  margin: 0 30px;
+}
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    width: 668px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+}
+.main-nav {
+  outline: 2px solid red;
+}
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1050px) {
+  .main-nav {
+    width: 1050px;
+    position: relative;
+  }
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .main-nav__togle {
+    display: none;
+  }
+}
+.main-nav__info {
+  display: none;
+}
+@media (min-width: 768px) {
+  .main-nav__info {
+    display: block;
+    width: 300px;
+    order: 2;
+  }
+}
+@media (min-width: 1050px) {
+  .main-nav__info {
+    width: 300px;
+    position: absolute;
+    right: -3px;
+    top: 106px;
+  }
+}
+.menu {
+  outline: 2px solid royalblue;
+}
+.menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1050px) {
+  .menu__list {
+    width: 1050px;
+  }
+}
+@media (min-width: 768px) {
+  .menu__item {
+    width: 334px;
+  }
+}
+@media (min-width: 1050px) {
+  .menu__item {
+    width: 525px;
+  }
+}
+.menu__item a {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  padding-left: 30px;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  padding-right: 160px;
+  display: block;
+}
+.menu__item:nth-of-type(odd) a {
+  background-color: #63D1BB;
+}
+.menu__item:nth-of-type(odd) a:hover,
+.menu__item:nth-of-type(odd) a:active {
+  background-color: #59D5BC;
+}
+.menu__item:nth-of-type(even) a {
+  background-color: #56C3B2;
+}
+.menu__item:nth-of-type(even) a:hover,
+.menu__item:nth-of-type(even) a:active {
+  background-color: #46C1AE;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.promo-card p {
+  font-size: 15px;
+  line-height: 24px;
+}
+.promo-card__header {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 31px;
+  margin-bottom: 3.5px;
+}
+@media (min-width: 768px) {
+  .promo-card__header {
+    flex-grow: 1;
+    width: 450px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 1050px) {
+  .promo-card__header {
+    width: 750px;
+  }
+}
+@media (min-width: 768px) {
+  .promo-card__header-wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.promo-card__wrapper {
+  margin: 0 30px;
+  outline: 2px solid red;
+}
+@media (min-width: 768px) {
+  .promo-card__wrapper {
+    display: flex;
+    width: 668px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1050px) {
+  .promo-card__wrapper {
+    width: 1050px;
+    justify-content: flex-end;
+  }
+}
+.promo-card__name {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #63D1BB;
+}
+@media (min-width: 768px) {
+  .promo-card__name {
+    width: 100px;
+  }
+}
+@media (min-width: 1050px) {
+  .promo-card__name {
+    order: -1;
+  }
+}
+.promo-card__info {
+  font-size: 15px;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .promo-card__info-wrapper {
+    width: 292px;
+  }
+}
+.promo-card__price {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  min-width: 157px;
+  text-align: center;
+}
+.promo-card__picture-tablet {
+  display: none;
+}
+@media (min-width: 768px) {
+  .promo-card__picture-tablet {
+    display: block;
+    width: 333px;
+  }
+}
+@media (min-width: 1050px) {
+  .promo-card__picture-tablet {
+    display: block;
+    width: 525px;
+  }
+}
+@media (min-width: 768px) {
+  .promo-card__picture {
+    display: none;
+  }
+}
+.product-card {
+  outline: 2px solid blueviolet;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .product-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1050px) {
+  .product-card {
+    flex-wrap: wrap;
+  }
+}
+.product-card__title {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+}
+.product-card__term {
+  font-size: 13px;
+  line-height: 30px;
+}
+.product-card__price {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+}
+.about__wrapper {
+  margin: 0 30px;
+  outline: 2px solid salmon;
+}
+@media (min-width: 768px) {
+  .about__wrapper {
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1050px) {
+  .about__wrapper {
+    width: 1050px;
+  }
+}
+.about__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+@media (min-width: 1050px) {
+  .about__title {
+    width: 450px;
+  }
+}
+.button {
+  text-align: center;
+  display: block;
+  border: 2px solid #444444;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #444444;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+}
+.catalog__list {
+  padding: 0;
+  list-style: none;
+  margin: 0 30px;
+  outline: 2px solid tomato;
+}
+@media (min-width: 768px) {
+  .catalog__list {
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1050px) {
+  .catalog__list {
+    width: 1050px;
+    justify-content: space-around;
+  }
+}
+.catalog {
+  outline: 2px solid tomato;
+}
+@media (min-width: 768px) {
+  .catalog__item {
+    width: 668px;
+  }
+}
+@media (min-width: 1050px) {
+  .catalog__item {
+    width: 316px;
+  }
+}
+.features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+  }
+}
+.features__item {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .features__item {
+    width: 300px;
+  }
+}
+@media (min-width: 1050px) {
+  .features__item {
+    width: 300px;
+  }
+}
+.page-header {
+  outline: 2px solid coral;
+}
+@media (max-width: 767px) {
+  .page-header {
+    min-width: 320px;
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+.page-header__logo {
+  height: 79px;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .page-header__logo {
+    height: 89px;
+    width: 320px;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1050px) {
+  .page-header__logo {
+    justify-content: center;
+  }
+}
+.page-main__header {
+  background-color: #F1F1F1;
+  outline: 2px solid greenyellow;
+}
+.page-main__title {
+  padding: 74px 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  margin: 0;
+}
+.page-main__background {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: #F1F1F1;
+  padding-bottom: 120px;
+}
+@media (max-width: 767px) {
+  .page-main {
+    min-width: 320px;
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+.site-list {
+  padding: 0;
+  margin: 0;
+  outline: 2px solid lightcyan;
+}
+@media (min-width: 768px) {
+  .site-list {
+    width: 321px;
+    display: flex;
+    justify-content: space-between;
+    order: 1;
+    align-items: flex-end;
+  }
+}
+@media (min-width: 1050px) {
+  .site-list {
+    width: 321px;
+    display: flex;
+    justify-content: space-between;
+    order: -1;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.site-list__item {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  margin-left: 76px;
+  margin-top: 28.5px;
+  margin-bottom: 26.5px;
+}
+@media (min-width: 768px) {
+  .site-list__item {
+    margin: 0;
+  }
+}
+.site-list__item a {
+  color: #000000;
+}
+.site-list__item--desektop {
+  display: none;
+}
+@media (min-width: 1050px) {
+  .site-list__item--desektop {
+    display: block;
+  }
+}
+.user-list {
+  padding: 0;
+  margin: 0;
+  outline: 2px solid lightgreen;
+}
+@media (min-width: 768px) {
+  .user-list {
+    width: 330px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .user-list__item--search {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+.user-list__item {
+  margin-left: 76px;
+  margin-top: 27.5px;
+  margin-bottom: 27.5px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+}
+@media (min-width: 768px) {
+  .user-list__item {
+    margin: 0;
+  }
+}
+.user-list__item a {
+  color: inherit;
+}
+.reviews__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+.reviews__author-text {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+}
+.reviews__author-name {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+.reviews__author-contact {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+}
+.reviews__wrapper {
+  margin: 0 30px;
+  outline: 2px solid green;
+}
+@media (min-width: 768px) {
+  .reviews__wrapper {
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1050px) {
+  .reviews__wrapper {
+    width: 1050px;
+  }
+}
+.contacts__heading {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.contacts__item {
+  font-size: 15px;
+  line-height: 30px;
+}
+.contacts__email {
+  color: #000000;
+  border-bottom: 1px solid #63D1BB;
+}
+.contacts__wrapper {
+  outline: 2px solid grey;
+  margin: 0 30px;
+}
+@media (min-width: 768px) {
+  .contacts__wrapper {
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1050px) {
+  .contacts__wrapper {
+    width: 350px;
+  }
+}
+@media (min-width: 768px) {
+  .contacts__write {
+    width: 230px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1050px) {
+  .contacts__write {
+    margin: 0;
+  }
+}
+.contacts {
+  outline: 1px solid red;
+}
+@media (min-width: 1050px) {
+  .contacts {
+    width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1050px) {
+  .contacts__map {
+    width: 527px;
+  }
+}
+.production-card__title-top {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .production-card__title-top {
+    display: none;
+  }
+}
+.production-card__title-bottom {
+  display: none;
+}
+@media (min-width: 768px) {
+  .production-card__title-bottom {
+    display: block;
+  }
+}
+.production-card__text {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+.production-card {
+  margin: 0 30px;
+  outline: 2px solid greenyellow;
+}
+@media (min-width: 768px) {
+  .production-card {
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1050px) {
+  .production-card {
+    width: 1050px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .production-card__text-wrapper {
+    width: 611px;
+  }
+}
+@media (min-width: 1050px) {
+  .production-card__text-wrapper {
+    width: 350px;
+  }
+}
+@media (min-width: 768px) {
+  .production-card__video {
+    width: 668px;
+  }
+}
+@media (min-width: 1050px) {
+  .production-card__video {
+    width: 682px;
+  }
+}
+.form__fieldset {
+  margin: 0 30px;
+  border: 0;
+}
+@media (min-width: 768px) {
+  .form__fieldset {
+    width: 668px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1050px) {
+  .form__fieldset {
+    width: 1050px;
+  }
+}
+.form__message {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .form__message {
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1050px) {
+  .form__message {
+    width: 1050px;
+  }
+}
+.form__legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63D1BB;
+  text-transform: uppercase;
+}
+.form__label {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+.form__item {
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .form__item--color {
+    width: 250px;
+  }
+}
+@media (min-width: 1050px) {
+  .form__item--color {
+    margin-right: 20px;
+  }
+}
+.form__input--text {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+}
+.form__list {
+  padding: 0;
+  outline: 2px solid lightpink;
+}
+@media (min-width: 768px) {
+  .form__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.form__info-message {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  order: -1;
+}
+@media (min-width: 768px) {
+  .form__info-message {
+    order: 1;
+  }
+}
+@media (min-width: 768px) {
+  .form__fieldset-wrapper {
+    background-color: #F1F1F1;
+  }
+}
+.form__footer {
+  margin: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .form__footer {
+    width: 668px;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1050px) {
+  .form__footer {
+    width: 1050px;
+  }
+}
+@media (min-width: 768px) {
+  .form__list--type .form__item {
+    width: 350px;
+  }
+}
+@media (min-width: 1050px) {
+  .form__list--type .form__item {
+    width: 1050px;
+  }
+}
+@media (min-width: 768px) {
+  .form__input--text-message,
+  .form__input--text {
+    width: 500px;
+  }
+}
+@media (min-width: 1050px) {
+  .form__input--text-message,
+  .form__input--text {
+    width: 700px;
+  }
+}
+.form__submit {
+  width: 260px;
+}
+@media (min-width: 768px) {
+  .form__submit {
+    width: 230px;
+  }
+}
+@media (min-width: 768px) {
+  .production__wrapper {
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1050px) {
+  .production__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .phone-wrapper {
+    min-width: 320px;
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
