@@ -51,7 +51,7 @@
         <form class="form__order" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fieldset">
             <legend class="form__legend">Тип</legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--type">
               <li class="form__item">
                 <label class="form__label" for="accessory">Аксессуар для интерьера</label>
                 <input type="radio" class="form__input form__input--radio" name="type" id="accessory" value="accessory" checked>
@@ -62,35 +62,37 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Цвет</legend>
-            <ul class="form__list">
-              <li class="form__item">
-                <label for="color-white" class="form__label">Белый</label>
-                <input type="checkbox" class="form__input form__input--box" name="white" id="color-white" checked>
-              </li>
-              <li class="form__item">
-                <label for="color-grey" class="form__label">Серый</label>
-                <input type="checkbox" class="form__input form__input--box" name="grey" id="color-grey" checked>
-              </li>
-              <li class="form__item">
-                <label for="color-tiffany" class="form__label">«Тиффани»</label>
-                <input type="checkbox" class="form__input form__input--box" name="tiffany" id="color-tiffany">
-              </li>
-              <li class="form__item">
-                <label for="color-black" class="form__label">Черный</label>
-                <input type="checkbox" class="form__input form__input--box" name="black" id="color-black">
-              </li>
-              <li class="form__item">
-                <label for="color-pink" class="form__label">Розовый</label>
-                <input type="checkbox" class="form__input form__input--box" name="pink" id="color-pink">
-              </li>
-              <li class="form__item">
-                <label for="color-orange" class="form__label">Оранжевый</label>
-                <input type="checkbox" class="form__input form__input--box" name="orange" id="color-orange">
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form__fieldset-wrapper">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Цвет</legend>
+              <ul class="form__list">
+                <li class="form__item form__item--color">
+                  <label for="color-white" class="form__label">Белый</label>
+                  <input type="checkbox" class="form__input form__input--box" name="white" id="color-white" checked>
+                </li>
+                <li class="form__item form__item--color">
+                  <label for="color-grey" class="form__label">Серый</label>
+                  <input type="checkbox" class="form__input form__input--box" name="grey" id="color-grey" checked>
+                </li>
+                <li class="form__item form__item--color">
+                  <label for="color-tiffany" class="form__label">«Тиффани»</label>
+                  <input type="checkbox" class="form__input form__input--box" name="tiffany" id="color-tiffany">
+                </li>
+                <li class="form__item form__item--color">
+                  <label for="color-black" class="form__label">Черный</label>
+                  <input type="checkbox" class="form__input form__input--box" name="black" id="color-black">
+                </li>
+                <li class="form__item form__item--color">
+                  <label for="color-pink" class="form__label">Розовый</label>
+                  <input type="checkbox" class="form__input form__input--box" name="pink" id="color-pink">
+                </li>
+                <li class="form__item form__item--color">
+                  <label for="color-orange" class="form__label">Оранжевый</label>
+                  <input type="checkbox" class="form__input form__input--box" name="orange" id="color-orange">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__fieldset">
             <legend class="form__legend">ФИО</legend>
             <ul class="form__list">
@@ -108,6 +110,7 @@
               </li>
             </ul>
           </fieldset>
+          <div class="form__fieldset-wrapper">
             <fieldset class="form__fieldset">
               <legend class="form__legend form__legend--phone">Тел</legend>
               <input type="text" class="form__input form__input--text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required maxlength="15">
@@ -116,12 +119,15 @@
               <legend class="form__legend form__legend--mail">E-mail</legend>
               <input type="text" class="form__input form__input--text" name="Email" placeholder="Ваш E-mail*" required maxlength="30">
             </fieldset>
-            <fieldset class="form__fieldset">
-              <legend class="form__legend form__legend--text">Доп</legend>
-              <textarea class="form__input form__input--text-message" name="text-message" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </fieldset>
-            <p class="form__info-message">*Поля обязательны для заполнения</p>
+          </div>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend form__legend--text">Доп</legend>
+            <textarea class="form__input form__input--text-message" name="text-message" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <div class="form__footer">
             <button type="submit" class="form__submit button">Отправить заказ</button>
+            <p class="form__info-message">*Поля обязательны для заполнения</p>
+          </div>
         </form>
       </section>
     </main>
