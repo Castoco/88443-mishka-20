@@ -1,6 +1,5 @@
 .page-main__header {
   background-color: @basic-grey;
-  outline: 2px solid greenyellow;
 }
 
 .page-main__title {
@@ -10,14 +9,32 @@
   font-size: 27px;
   line-height: 30px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 112px;
+  }
+
+  @media (min-width: @desektop-width) {
+    font-size: 53px;
+    line-height: 57px
+  }
 }
 
 .page-main__background {
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-color: @basic-grey;
+  background-color: @grey-back;
   padding-bottom: 120px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    min-height: 702px;
+    background-position: 50% 100%;
+    padding: 0;
+  }
 }
 
 .page-main {

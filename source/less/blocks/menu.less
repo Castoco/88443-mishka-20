@@ -39,6 +39,23 @@
   padding-bottom: 31px;
   padding-right: 160px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    @menu-shift: -119px;
+
+    padding-top: 25px;
+    padding-bottom: 34px;
+    padding-left: 36px;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    top: @menu-shift;
+    margin-bottom: @menu-shift;
+  }
+
+  @media (min-width: @desektop-width) {
+    padding-right: 350px;
+  }
 }
 
 .menu__item:nth-of-type(odd) a {
