@@ -14,5 +14,27 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: @desektop-width) {
+    width: 1050px;
+  }
+}
+
+.page-foorer__logo {
+  display: none;
+
+  &:hover svg {
+    fill: @basic-green-darkness;
+  }
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    padding-top: 51px;
   }
 }

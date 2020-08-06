@@ -1,13 +1,13 @@
-.menu {
-  outline: 2px solid royalblue;
-}
-
 .menu__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  top: -76px;
+  margin-bottom: -76px;
 
   @media (min-width: @tablet-width) {
+    position: static;
     display: flex;
     flex-wrap: wrap;
     width: 668px;

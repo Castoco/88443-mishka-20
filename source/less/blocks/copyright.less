@@ -1,0 +1,31 @@
+.copyright svg {
+  fill: @basic-green;
+}
+
+.copyright {
+  &:hover svg {
+    fill: @basic-green-darkness;
+  }
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+.copyright {
+  font-size: 19px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-top: 58px;
+    padding-bottom: 0;
+  }
+}
+
+.copyright__text {
+  padding-right: 27px;
+}

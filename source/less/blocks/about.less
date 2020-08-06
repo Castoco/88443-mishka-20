@@ -1,6 +1,5 @@
 .about__wrapper {
   margin: 0 30px;
-  outline: 2px solid salmon;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -11,6 +10,7 @@
 
   @media (min-width: @desektop-width) {
     width: 1050px;
+    justify-content: center;
   }
 }
 
@@ -18,8 +18,19 @@
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
+  margin-bottom: 82px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 99px;
+  }
 
   @media (min-width: @desektop-width) {
-    width: 450px;
+    font-size: 53px;
+    line-height: 57px;
+    width: 700px;
+    margin-bottom: 96px;
   }
 }
