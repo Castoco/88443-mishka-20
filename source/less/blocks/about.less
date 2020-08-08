@@ -1,5 +1,6 @@
 .about__wrapper {
   margin: 0 30px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -11,6 +12,37 @@
   @media (min-width: @desektop-width) {
     width: 1050px;
     justify-content: center;
+  }
+}
+
+.about__wrapper {
+  position: relative;
+
+  &::before {
+    content: " ";
+    width: 320px;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: -36px;
+    right: -30px;
+
+    @media (min-width: @tablet-width) {
+      width: 772px;
+      height: 15px;
+      top: -71px;
+      right: -52px;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 1050px;
+      height: 21px;
+      top: -90px;
+      right: 0px;
+    }
   }
 }
 
