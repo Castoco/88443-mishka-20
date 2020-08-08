@@ -2,7 +2,6 @@
   padding: 0;
   list-style: none;
   margin: 0 30px;
-  outline: 2px solid tomato;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -13,12 +12,16 @@
 
   @media (min-width: @desektop-width) {
     width: 1050px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
 .catalog {
-  outline: 2px solid tomato;
+  margin-top: 35px;
+
+  @media (min-width: @desektop-width) {
+    margin-top: 86px;
+  }
 }
 
 .catalog__item {
@@ -28,5 +31,6 @@
 
   @media (min-width: @desektop-width) {
     width: 316px;
+    display: flex;
   }
 }

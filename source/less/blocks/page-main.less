@@ -11,6 +11,12 @@
   position: static;
 }
 
+.page-main__header--static .page-main__title {
+  @media (min-width: @tablet-width) {
+    padding-top: 112px;
+  }
+}
+
 .page-main__title {
   padding: 74px 30px;
   text-align: center;
@@ -22,12 +28,13 @@
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 112px;
+    padding-top: 102px;
   }
 
   @media (min-width: @desektop-width) {
     font-size: 53px;
-    line-height: 57px
+    line-height: 57px;
+    padding-bottom: 95px;
   }
 }
 
