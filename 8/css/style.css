@@ -445,9 +445,6 @@ template {
 .main-nav--opened .main-nav__toggle::after {
   transform: rotate(-45deg);
 }
-.main-nav--nojs {
-  display: none;
-}
 .main-nav__info {
   display: none;
 }
@@ -1151,7 +1148,7 @@ template {
 }
 @media (min-width: 768px) {
   .page-main__header::before {
-    content: " ";
+    content: "";
     min-width: 100%;
     height: 23px;
     background-image: url("../img/bg-zigzag-fill.svg");
@@ -1196,7 +1193,7 @@ template {
 }
 @media (min-width: 768px) {
   .page-main__background::before {
-    content: " ";
+    content: "";
     width: 100%;
     height: 23px;
     background-image: url("../img/bg-zigzag-fill.svg");
@@ -1210,7 +1207,6 @@ template {
 @media (min-width: 1050px) {
   .page-main__background::before {
     height: 37px;
-    bottom: -20px;
   }
 }
 @media (min-width: 768px) {
