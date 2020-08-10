@@ -1,21 +1,25 @@
-.menu {
-  outline: 2px solid royalblue;
-}
-
 .menu__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  top: -76px;
+  margin-bottom: -76px;
 
   @media (min-width: @tablet-width) {
+    top: 44px;
+    margin: 0 auto;
+    margin-bottom: -44px;
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
     width: 668px;
-    margin: 0 auto;
   }
 
-  @media (min-width: @desektop-width) {
+  @media (min-width: @desktop-width) {
     width: 1050px;
+    top: 43px;
+    margin-bottom: -43px;
   }
 }
 
@@ -24,7 +28,7 @@
     width: 334px;
   }
 
-  @media (min-width: @desektop-width) {
+  @media (min-width: @desktop-width) {
     width: 525px;
   }
 }
@@ -39,6 +43,23 @@
   padding-bottom: 31px;
   padding-right: 160px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    @menu-shift: -119px;
+
+    padding-top: 25px;
+    padding-bottom: 34px;
+    padding-left: 36px;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    top: @menu-shift;
+    margin-bottom: @menu-shift;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 350px;
+  }
 }
 
 .menu__item:nth-of-type(odd) a {
