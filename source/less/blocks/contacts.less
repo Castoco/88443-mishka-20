@@ -2,21 +2,51 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 27px;
 }
 
 .contacts__item {
   font-size: 15px;
   line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .contacts__email {
   color: @basic-black;
   border-bottom: 1px solid @basic-green;
+  padding-bottom: 2px;
+}
+
+.contacts__text {
+  margin: 0;
+  width: 183px;
+}
+
+.contacts__address {
+  display: block;
+  margin-right: 27px;
 }
 
 .contacts__wrapper {
-  outline: 2px solid grey;
   margin: 0 30px;
+  margin-top: 89px;
+  margin-bottom: 33px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 320px;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: -44px;
+    right: -30px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 668px;
@@ -29,6 +59,12 @@
 }
 
 .contacts__write {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  width: 260px;
+  box-sizing: border-box;
+  margin: 0 auto;
   @media (min-width: @tablet-width) {
     width: 230px;
     margin: 0 auto;
@@ -40,7 +76,6 @@
 }
 
 .contacts {
-  outline: 1px solid red;
   margin-bottom: 39px;
 
   @media (min-width: @desktop-width) {
@@ -53,6 +88,7 @@
 }
 
 .contacts__map {
+  margin-bottom: 40px;
   @media (min-width: @desktop-width) {
     width: 527px;
   }
