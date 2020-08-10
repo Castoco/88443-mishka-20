@@ -1153,7 +1153,6 @@ template {
     min-width: 100%;
     height: 23px;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-size: cover;
     position: absolute;
     background-repeat: repeat;
     bottom: -13px;
@@ -1198,7 +1197,6 @@ template {
     width: 100%;
     height: 23px;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-size: cover;
     position: absolute;
     background-repeat: repeat;
     bottom: -11px;
@@ -1318,11 +1316,11 @@ template {
 .site-list__item a:active {
   opacity: 0.3;
 }
-.site-list__item--desektop {
+.site-list__item--desktop {
   display: none;
 }
 @media (min-width: 1050px) {
-  .site-list__item--desektop {
+  .site-list__item--desktop {
     display: block;
   }
 }
