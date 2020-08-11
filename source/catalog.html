@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-<!-- //Pixel Glass
     <style>
       HTML {
         background-repeat: no-repeat;
         background-position:  50% 0;
         /* По умолчанию показывается мобильный макет */
-        background-image: url( "../img/Mobile.png" );
+        background-image: url( "../img/catalog-mob.png" );
       }
       /* Планшет */
       @media ( min-width: 768px ) {
         HTML {
           /* Планшетный макет */
-          background-image: url( "../img/Tablet.png" );
+          background-image: url( "../img/catalog-Tablet.png" );
         }
       }
       /* Десктоп */
@@ -26,7 +25,7 @@
     </style>
     <link href="css/styles.css" rel="stylesheet">
     <script src="js/script.js"></script>
- // Pixel Glass -->
+<!-- //Pixel Glass// Pixel Glass -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
@@ -141,7 +140,16 @@
         <div class="production__wrapper">
           <article class="production-card">
             <h3 class="production-card__title-top">Процесс производства</h3>
-            <img  class="production-card__video" src="https://via.placeholder.com/260x155" alt="Процес вязания">
+            <div class="production-card__video-wrapper">
+              <picture>
+                <source media="(min-width: 1050px)" srcset="img/video-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+                <img  class="production-card__video" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процес вязания">
+                </picture>
+              <button type="button" class="production-card__play-button">
+                <img class="production-card__play-icon"src="img/icon-play.svg" width="101" height="77" alt="Запустить видео">
+              </button>
+            </div>
             <div class="production-card__text-wrapper">
               <h3 class="production-card__title-bottom">Процесс производства</h3>
               <p class="production-card__text">По просьбам наших любимых фолловеров мы сняли

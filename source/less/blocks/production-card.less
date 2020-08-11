@@ -2,6 +2,9 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  padding-left: 90px;
+  padding-top: 5px;
+  padding-bottom: 9px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -13,6 +16,20 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 106px;
+    margin-top: 14px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    width: 178px;
+    margin-top: 96px;
+    padding-left: 77px;
+    margin-bottom: 27px;
   }
 }
 
@@ -20,15 +37,42 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+  color: @basic-black-light;
+  width: 226px;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 611px;
+    padding-left: 39px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 252px;
+    align-self: center;
+  }
 }
 
 .production-card {
   margin: 0 30px;
-  outline: 2px solid greenyellow;
+  border: 1px solid @grey-special;
+
+  &:hover {
+    box-shadow: 0 6px 10px @black-border;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px @black-border;
+  }
 
   @media (min-width: @tablet-width) {
     width: 668px;
     margin: 0 auto;
+    margin-bottom: 61px;
   }
 
   @media (min-width: @desktop-width) {
@@ -39,13 +83,53 @@
 }
 
 .production-card__text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
   @media (min-width: @tablet-width) {
-    width: 611px;
+    width: 668px;
+    flex-direction: column;
+    justify-content: center;
   }
 
   @media (min-width: @desktop-width) {
-    width: 350px;
+    width: 367px;
+    justify-content: flex-start;
   }
+}
+
+.production-card__play-button {
+  border: none;
+  background: none;
+  position: absolute;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.production-card__video-wrapper {
+  position: relative;
+  margin-bottom: 23px;
+
+  &:hover .production-card__play-icon {
+    transform: scale(1.2);
+  }
+
+  &:active .production-card__play-icon {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    line-height: 0;
+  }
+}
+
+.production-card__play-icon {
+  transition: 0.2s;
 }
 
 .production-card__video {
@@ -55,5 +139,30 @@
 
   @media (min-width: @desktop-width) {
     width: 682px;
+  }
+}
+
+.production-card__buy {
+  width: 192px;
+  box-sizing: border-box;
+  line-height: 16px;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 11px;
+  padding-left: 11px;
+  margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    width: 584px;
+    margin-top: 41px;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 230px;
+    margin-left: 79px;
+    margin-top: 51px;
+    align-self: flex-end;
   }
 }
