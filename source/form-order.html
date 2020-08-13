@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <!-- //Pixel Glass
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "../img/forma-Mobile.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "../img/Tablet-form.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1050px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/960.png" );
+        }
+      }
+    </style>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+     // Pixel Glass -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
@@ -32,7 +58,7 @@
         <ul class="main-nav__list user-list">
           <li class="user-list__item user-list__item--search">
             <a href="search.html">
-              <svg <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="18px" height="18px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="" x="0px" y="0px" width="18px" height="18px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
                 <path fill="rgba(0, 0, 0, 0.2)" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
               </svg>
               <span>Поиск по сайту</span>
@@ -54,53 +80,53 @@
         <p class="form__message">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
         <form class="form__order" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Тип</legend>
+          <fieldset class="form__fieldset form__fieldset--type">
+            <legend class="form__legend form__legend--type">Тип</legend>
             <ul class="form__list form__list--type">
               <li class="form__item">
-                <label class="form__label" for="accessory">Аксессуар для интерьера</label>
-                <input type="radio" class="form__input form__input--radio" name="type" id="accessory" value="accessory" checked>
+                <input type="radio" class="form__input form__input--radio visually-hidden" name="type" id="accessory" value="accessory" checked>
+                <label class="form__label form__label--radio" for="accessory">Аксессуар для интерьера</label>
               </li>
               <li class="form__item">
-                <label class="form__label" for="toy">Детская игрушка</label>
-                <input type="radio" class="form__input form__input--radio" name="type" id="toy" value="toy">
+                <input type="radio" class="form__input form__input--radio visually-hidden" name="type" id="toy" value="toy">
+                <label class="form__label form__label--radio" for="toy">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
           <div class="form__fieldset-wrapper">
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Цвет</legend>
+            <fieldset class="form__fieldset form__fieldset--color">
+              <legend class="form__legend form__legend--color">Цвет</legend>
               <ul class="form__list">
                 <li class="form__item form__item--color">
+                  <input type="checkbox" class="form__input form__input--box visually-hidden" name="white" id="color-white" checked>
                   <label for="color-white" class="form__label">Белый</label>
-                  <input type="checkbox" class="form__input form__input--box" name="white" id="color-white" checked>
                 </li>
                 <li class="form__item form__item--color">
+                  <input type="checkbox" class="form__input form__input--box visually-hidden" name="grey" id="color-grey" checked>
                   <label for="color-grey" class="form__label">Серый</label>
-                  <input type="checkbox" class="form__input form__input--box" name="grey" id="color-grey" checked>
                 </li>
                 <li class="form__item form__item--color">
+                  <input type="checkbox" class="form__input form__input--box visually-hidden" name="tiffany" id="color-tiffany">
                   <label for="color-tiffany" class="form__label">«Тиффани»</label>
-                  <input type="checkbox" class="form__input form__input--box" name="tiffany" id="color-tiffany">
                 </li>
                 <li class="form__item form__item--color">
+                  <input type="checkbox" class="form__input form__input--box visually-hidden" name="black" id="color-black">
                   <label for="color-black" class="form__label">Черный</label>
-                  <input type="checkbox" class="form__input form__input--box" name="black" id="color-black">
                 </li>
                 <li class="form__item form__item--color">
+                  <input type="checkbox" class="form__input form__input--box visually-hidden" name="pink" id="color-pink">
                   <label for="color-pink" class="form__label">Розовый</label>
-                  <input type="checkbox" class="form__input form__input--box" name="pink" id="color-pink">
                 </li>
                 <li class="form__item form__item--color">
+                  <input type="checkbox" class="form__input form__input--box visually-hidden" name="orange" id="color-orange">
                   <label for="color-orange" class="form__label">Оранжевый</label>
-                  <input type="checkbox" class="form__input form__input--box" name="orange" id="color-orange">
                 </li>
               </ul>
             </fieldset>
           </div>
           <fieldset class="form__fieldset">
-            <legend class="form__legend">ФИО</legend>
-            <ul class="form__list">
+            <legend class="form__legend form__legend--name">ФИО</legend>
+            <ul class="form__list form__list--full-name">
               <li class="form__item">
                 <label class="form__label" for="name" >Имя:</label>
                 <input type="text" class="form__input form__input--text" name="first-name"  id="name" placeholder="Введите ваше имя*" required>
@@ -115,22 +141,22 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__fieldset-wrapper">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--contacts">
             <fieldset class="form__fieldset">
               <legend class="form__legend form__legend--phone">Тел</legend>
-              <input type="text" class="form__input form__input--text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required maxlength="15">
+              <input type="text" class="form__input form__input--text form__input--contacts" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required maxlength="15">
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__legend form__legend--mail">E-mail</legend>
-              <input type="text" class="form__input form__input--text" name="Email" placeholder="Ваш E-mail*" required maxlength="30">
+              <input type="text" class="form__input form__input--text form__input--contacts" name="Email" placeholder="Ваш Email*" required maxlength="30">
             </fieldset>
           </div>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--textarea">
             <legend class="form__legend form__legend--text">Доп</legend>
-            <textarea class="form__input form__input--text-message" name="text-message" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="form__input form__input--text-message" name="text-message" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <div class="form__footer">
-            <button type="submit" class="form__submit button">Отправить заказ</button>
+            <button type="submit" class="button form__submit">Отправить заказ</button>
             <p class="form__info-message">*Поля обязательны для заполнения</p>
           </div>
         </form>
@@ -138,8 +164,8 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-foorer__logo" href="index.html">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="101.615px" height="34.056px" viewBox="0 0 101.615 34.056">
+        <a class="page-footer__logo" href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="101.615px" height="34.056px" viewBox="0 0 101.615 34.056">
             <path d="M19.135,21.495c-0.083-2.683-0.51-5.347-0.475-8.035c0.028-2.174,0.389-4.41-0.36-6.495 c0.047-0.237,0.096-0.473,0.14-0.711c0.193-1.045-3.271-0.492-3.813,0.464c-0.343,0.28-0.519,0.615-0.375,0.957 c0.037,0.086,0.069,0.174,0.102,0.261c-0.656,3.204-1.57,6.306-2.621,9.412c-0.402,1.188-0.888,2.349-1.298,3.533 c-0.582-1.104-1.169-2.194-1.643-3.377C7.418,14.071,6.18,10.602,4.505,7.298C4.695,5.77,1.301,5.93,0.632,7.33 c-0.809,1.694-0.705,3.403-0.438,5.214c0.3,2.042,0.353,4.05,0.377,6.111c0.047,3.976,0.358,7.943,0.417,11.919 c-0.354,0.395-0.461,0.881-0.091,1.375c0.162,0.216,0.361,0.382,0.571,0.549c0.904,0.724,3.5,0.107,3.496-1.271 c-0.014-4.123-0.312-8.238-0.42-12.358c-0.011-0.404-0.018-0.807-0.024-1.21c0.057,0.145,0.114,0.29,0.171,0.434 c0.64,1.604,1.31,3.163,2.185,4.654c0.868,1.478,1.303,3.064,1.803,4.677c-0.189,0.217-0.303,0.462-0.233,0.708 c-0.039,0.18,0.07,0.292,0.251,0.36c0.639,0.548,1.841,0.274,2.509-0.007c0.287-0.121,0.561-0.261,0.826-0.424 c0.345-0.212,0.883-0.679,0.729-1.159c-0.03-0.093-0.058-0.186-0.087-0.279c0.47-1.27,0.709-2.589,0.965-3.93 c0.272-1.428,0.782-2.78,1.295-4.133c0.052,0.619,0.106,1.238,0.156,1.855c0.204,2.554,0.033,5.072,0.007,7.626 c-0.008,0.847,0.054,1.633,0.219,2.461c0.068,0.343,0.367,1.808,0.281,1.887c-0.611,0.564-0.433,1.257,0.385,1.437 c0.915,0.201,2.081-0.105,2.77-0.742c1.198-1.106,0.632-2.845,0.361-4.241C18.661,26.501,19.208,23.879,19.135,21.495z"/>
             <path d="M27.499,22.17c-0.074-1.988-0.765-3.862-0.774-5.872c-0.011-2.305,0.181-4.593-0.155-6.886 c-0.106-0.725-4.056,0.1-3.917,1.05c0.309,2.11,0.197,4.229,0.159,6.354c-0.037,2.044,0.468,3.898,0.73,5.904 c0.269,2.054-0.084,4.157,0.149,6.213c0.109,0.962,0.75,2.743,0.089,3.58c-0.42,0.532,1.469,0.342,1.553,0.326 c0.769-0.142,1.793-0.392,2.304-1.038c0.653-0.828,0.196-2.426,0.053-3.357C27.374,26.385,27.576,24.249,27.499,22.17z"/>
             <path d="M43.828,18.851c-2.062-2.784-5.889-0.78-8.561-1.54c-1.377-0.392-1.395-2.271-1.392-3.396 c0.004-1.426-0.114-2.732-0.273-4.146c-0.119-1.052-0.024-2.121,0.746-2.904c0.142-0.144,0.859-0.336,0.81-0.339 c0.354-0.061,0.676-0.076,1.067-0.093c1.549-0.066,4.613,0.232,4.019,2.483c-0.266,1.01,3.596,0.431,3.877-0.637 c1.213-4.598-7.284-3.714-9.686-3.078C32.225,5.789,29.787,7.047,29.66,9.6c-0.061,1.219,0.273,2.379,0.325,3.587 c0.061,1.39-0.198,2.776,0.289,4.118c1.082,2.982,5.52,1.576,7.778,1.745c3.845,0.287,2.697,5.469,2.748,7.883 c0.027,1.288,1.181,3.429,0.211,4.507c-0.595,0.662-1.982,0.699-2.792,0.768c-0.813,0.068-2.201,0.312-2.742-0.461 c-0.993-1.418,0.091-3.799-0.121-5.425c-0.121-0.924-4.066-0.095-3.917,1.05c0.342,2.627-1.399,6.145,2.402,6.596 c2.441,0.289,5.191-0.161,7.5-0.928c1.196-0.396,2.307-0.942,3.243-1.793c1.035-0.941,0.694-2.348,0.417-3.547 C44.324,24.782,45.732,21.421,43.828,18.851z"/>
@@ -180,7 +206,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="27px" height="34px" viewBox="0 0 27 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="" x="0px" y="0px" width="27px" height="34px" viewBox="0 0 27 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
               <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
             </svg>
             <span class="visually-hidden">
