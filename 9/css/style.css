@@ -1791,7 +1791,7 @@ template {
     position: absolute;
     width: 47px;
     height: 81px;
-    background-image: url("/img/icon-flag.svg");
+    background-image: url("../img/icon-flag.svg");
     top: -24px;
     right: 3px;
   }
