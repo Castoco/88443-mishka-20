@@ -51,23 +51,6 @@
   @media (min-width: @desktop-width) {
     background-color: @grey-back;
   }
-
-  &::before {
-    @media (min-width: @tablet-width) {
-      content: "";
-      width: 100%;
-      height: 23px;
-      background-image: url("../img/bg-zigzag-fill.svg");
-      position: absolute;
-      background-repeat: repeat;
-      bottom: -11px;
-      z-index: 2;
-    }
-
-    @media (min-width: @desktop-width) {
-      height: 27px;
-    }
-  }
 }
 
 .page-main__header--static .page-main__title {

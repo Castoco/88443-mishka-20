@@ -114,6 +114,21 @@
     width: 668px;
     margin: 0 auto;
     margin-top: 152px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      background-image: url("/img/icon-flag.svg");
+      top: -24px;
+      right: 3px;
+
+      @media (min-width: @desktop-width) {
+        top: 62px;
+        right: 413px;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {

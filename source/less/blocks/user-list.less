@@ -28,9 +28,26 @@
 .user-list__item--search svg {
   position: absolute;
   left: 31px;
+  bottom: 109px;
 
   @media (min-width: @tablet-width) {
     position: static;
+  }
+}
+
+.user-list__item--basket svg {
+  position: absolute;
+  left: 31px;
+  bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    top: 2px;
+    left: -51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 2px;
+    left: 32px;
   }
 }
 
@@ -59,6 +76,7 @@
     padding: 0;
     border: 0;
     text-align: right;
+    position: relative;
   }
 }
 
