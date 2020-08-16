@@ -2205,6 +2205,7 @@ template {
   .production-card__video-wrapper {
     margin: 0;
     line-height: 0;
+    align-self: flex-start;
   }
 }
 .production-card__play-icon {
@@ -2334,6 +2335,11 @@ template {
 @media (min-width: 768px) {
   .form__fieldset--color {
     padding-bottom: 33px;
+  }
+}
+@media (min-width: 1050px) {
+  .form__fieldset--color {
+    display: block;
   }
 }
 .form__input {
