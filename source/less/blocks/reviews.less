@@ -166,6 +166,11 @@
     background-repeat: no-repeat;
     width: 768px;
     margin: 0 auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {

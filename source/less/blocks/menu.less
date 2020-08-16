@@ -1,6 +1,5 @@
 .menu__list {
   @menu-shift: -162px;
-
   list-style: none;
   margin: 0;
   padding: 0;
@@ -28,6 +27,12 @@
     width: 334px;
 
     &:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+      margin-bottom: -5px;
+    }
+
+    &:hover a {
       transform: translateY(-5px);
       transition: 0.3s;
     }
@@ -63,7 +68,7 @@
   }
 }
 
-.menu__item:nth-of-type(odd) a {
+.menu__item:nth-of-type(odd) {
   background-color: @basic-green;
 
   &:hover,
@@ -72,11 +77,69 @@
   }
 }
 
-.menu__item:nth-of-type(even) a {
+.menu__item:nth-of-type(even) {
   background-color: @basic-green-dark;
 
   &:hover,
   &:active {
     background-color: @basic-green-darkness;
+  }
+}
+
+.menu__item--interier-icon {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 60px;
+    background-image: url("../img/icon-interior.svg");
+    position: absolute;
+    opacity: 0.5;
+    top: 24px;
+    right: 36px;
+
+    @media (min-width: @tablet-width) {
+      width: 41px;
+      top: 30px;
+    }
+  }
+
+  &:hover::before {
+    opacity: 0.7;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.menu__item--toy-icon {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-toy.svg");
+    position: absolute;
+    opacity: 0.5;
+    top: 21px;
+    right: 27px;
+
+    @media (min-width: @tablet-width) {
+      width: 61px;
+      height: 61px;
+      top: 32px;
+      right: 32px;
+    }
+  }
+
+  &:hover::before {
+    opacity: 0.7;
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 }
