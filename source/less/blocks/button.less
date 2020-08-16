@@ -9,4 +9,14 @@
   color: @basic-black-light;
   background-color: @basic-white;
   text-transform: uppercase;
+
+  &:hover {
+    color: @basic-white;
+    background-color: @basic-black-light;
+  }
+
+  &:active {
+    @button-color: rgba(255, 255, 255, 0.3);
+    color: @button-color;
+  }
 }

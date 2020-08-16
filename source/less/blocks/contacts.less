@@ -2,58 +2,217 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 79px;
+    margin-bottom: 5px;
+  }
 }
 
 .contacts__item {
   font-size: 15px;
   line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  color: @basic-black-light;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 22px;
+    width: 333px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 7px;
+  }
 }
 
 .contacts__email {
-  color: @basic-black;
   border-bottom: 1px solid @basic-green;
+  padding-bottom: 2px;
+  color: @basic-black-light;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 3px;
+  }
+
+  &:hover {
+    color: @basic-green-darkness;
+    border-color: @basic-green-darkness;
+  }
+
+  &:active {
+    border-color: @email-active-border;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 7px;
+  }
+}
+
+.contacts__text {
+  margin: 0;
+  width: 183px;
+
+  @media (min-width: @tablet-width) {
+    width: 257px;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.contacts__address {
+  display: block;
+  margin-right: 27px;
 }
 
 .contacts__wrapper {
-  outline: 2px solid grey;
   margin: 0 30px;
+  margin-top: 89px;
+  margin-bottom: 33px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 320px;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: -44px;
+    right: -30px;
+
+    @media (min-width: @tablet-width) {
+      width: 772px;
+      height: 15px;
+      top: -85px;
+      right: -52px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1050px;
+      height: 21px;
+      top: -93px;
+      left: -176px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     width: 668px;
     margin: 0 auto;
+    margin-top: 152px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/icon-flag.svg");
+      top: -24px;
+      right: 3px;
+
+      @media (min-width: @desktop-width) {
+        top: 62px;
+        right: 413px;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {
-    width: 350px;
-  }
-}
-
-.contacts__write {
-  @media (min-width: @tablet-width) {
-    width: 230px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: @desktop-width) {
+    width: 348px;
     margin: 0;
   }
 }
 
+.contacts__write {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  width: 260px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+    margin: 0 auto;
+    font-size: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-right: auto;
+    position: relative;
+    top: -55px;
+    right: -175px;
+  }
+}
+
 .contacts {
-  outline: 1px solid red;
   margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 1050px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    margin-top: 158px;
+    margin-bottom: 49px;
   }
 }
 
 .contacts__map {
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 527px;
+    margin: 0;
+  }
+}
+
+.contacts__map iframe {
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 457px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 527px;
+    height: 457px;
+  }
+}
+
+.contacts__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    margin-top: 14px;
   }
 }
