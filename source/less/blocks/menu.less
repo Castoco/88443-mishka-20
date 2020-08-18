@@ -1,15 +1,11 @@
 .menu__list {
-  @menu-shift: -162px;
   list-style: none;
-  margin: 0;
+  margin-top: auto;
   padding: 0;
-  position: relative;
-  top: -76px;
-  margin-bottom: -76px;
+  margin-bottom: 0;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
-    margin-bottom: @menu-shift;
     z-index: 1;
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +14,6 @@
 
   @media (min-width: @desktop-width) {
     width: 1050px;
-    margin-bottom: @menu-shift;
   }
 }
 
@@ -142,4 +137,9 @@
   &:active::before {
     opacity: 0.3;
   }
+}
+
+
+.menu {
+  margin-top: auto;
 }
