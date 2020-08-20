@@ -111,11 +111,11 @@
   line-height: 0;
   align-self: start;
 
-  &:hover img {
+  &:hover svg {
     opacity: 0.6;
   }
 
-  &:active img {
+  &:active svg {
     opacity: 0.3;
   }
 
@@ -126,12 +126,13 @@
   }
 }
 
-.reviews__next img,
-.reviews__prev img {
+.reviews__next svg,
+.reviews__prev svg {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 37px;
   padding-right: 41px;
+  display: block;
 
   @media (min-width: @tablet-width) {
     margin: 0;
