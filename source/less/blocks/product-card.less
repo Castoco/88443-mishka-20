@@ -9,11 +9,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-bottom: 54px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
+    margin-bottom: 54px;
   }
 
   &:hover {
@@ -137,12 +138,16 @@
   }
 }
 
+.product-card__icon {
+  fill: @icon-color;
+}
+
 .product-card__modal {
-  &:hover path {
+  &:hover .product-card__icon {
     fill: @basic-green;
   }
 
-  &:active path {
+  &:active {
     opacity: 0.3;
   }
 }
