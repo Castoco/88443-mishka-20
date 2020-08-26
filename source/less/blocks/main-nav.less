@@ -23,6 +23,7 @@
 }
 
 .main-nav__toggle {
+  outline: none;
   position: absolute;
   top: 14px;
   right: 17px;
@@ -60,15 +61,13 @@
 
 .main-nav--opened .main-nav__toggle {
   position: absolute;
-  top: 13px;
-  right: 14px;
 
   &::before,
   &::after {
     content: " ";
     position: absolute;
-    top: 25px;
-    right: 12px;
+    top: 24px;
+    right: 9px;
     width: 29px;
     height: 2px;
     background-color: @black-special;
