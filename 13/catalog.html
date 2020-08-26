@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <!-- //Pixel
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "../img/catalog-mob.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "../img/catalog-Tablet.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1050px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/960.png" );
+        }
+      }
+    </style>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    GlassPixel Glass -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <base href="https://htmlacademy-adaptive.github.io/88443-mishka-20/13/">
+</head>
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="main-nav main-nav--opened">
+        <a class="main-nav__logo" href="index.html">
+          <svg width="85" heigth="35">
+            <use xlink:href="img/sprite.svg#logo-mobile" class="main-nav__logo-mobile"></use>
+            <use xlink:href="img/sprite.svg#logo-tablet" class="main-nav__logo-tablet"></use>
+            <use xlink:href="img/sprite.svg#logo-desktop" class="main-nav__logo-desktop"></use>
+          </svg>
+        </a>
+        <button type="button" class="main-nav__toggle main-nav__toggle--nojs">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form-order.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item site-list__item--desktop">
+            <a href="new.html">Новые поступления</a>
+          </li>
+          <li class="site-list__item site-list__item--desktop">
+            <a href="sale.html">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item user-list__item--search">
+            <a href="search.html">
+              <svg width="18px" height="18px" class="user-list__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+              <span class="user-list__search">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="user-list__item user-list__item--basket">
+            <a href="basket.html">
+              <svg width="20.294px" height="18.849px" >
+                <use xlink:href="img/sprite.svg#icon-cart" class="user-list__icon"></use>
+              </svg>
+              <span class="user-list__status">Корзина: пока пуста</span>
+            </a>
+          </li>
+        </ul>
+        <span class="main-nav__info">Бесплатная доставка по России</span>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Мягкие игрушки ручной работы</h1>
+      <header class="page-main__header">
+        <h2 class="page-main__title">Каталог товаров</h2>
+      </header>
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <article class="product-card">
+              <a href="rabbit.html" class="product-card__link">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1050px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+                  <source media="(min-width: 1050px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                  <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Зайчик-Попрыгайчик">
+                </picture>
+              </a>
+              <div class="product-card__description">
+                <a href="rabbit.html" class="product-card__link">
+                  <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+                </a>
+                <p class="product-card__term">Рост 30 см, вес 200 г</p>
+                <div class="product-card__price">
+                  <span>1 200 руб.</span>
+                  <a class="product-card__modal" href="modal.html">
+                    <svg width="20.294px" height="18.849px" >
+                      <use xlink:href="img/sprite.svg#icon-cart" class="product-card__icon"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product-card">
+              <a href="rabbit.html" class="product-card__link">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1050px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+                  <source media="(min-width: 1050px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                  <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья">
+                </picture>
+              </a>
+              <div class="product-card__description">
+                <a href="rabbit.html" class="product-card__link">
+                  <h3 class="product-card__title">Корзинка для белья</h3>
+                </a>
+                <p class="product-card__term">Диаметр 15 см, высота 10 см</p>
+                <div class="product-card__price">
+                  <span>690 руб.</span>
+                  <a class="product-card__modal" href="modal.html">
+                    <svg width="20.294px" height="18.849px" >
+                      <use xlink:href="img/sprite.svg#icon-cart" class="product-card__icon"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product-card">
+              <a href="rabbit.html" class="product-card__link">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1050px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp x2">
+                  <source media="(min-width: 1050px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                  <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Большая корзинка для игрушек">
+                </picture>
+              </a>
+              <div class="product-card__description">
+                <a href="rabbit.html" class="product-card__link">
+                  <h3 class="product-card__title">Большая корзинка для игрушек</h3>
+                </a>
+                <p class="product-card__term">Диаметр 30 см, высота 30 см</p>
+                <div class="product-card__price">
+                  <span>1 500 руб.</span>
+                  <a class="product-card__modal" href="modal.html">
+                    <svg width="20.294px" height="18.849px" >
+                      <use xlink:href="img/sprite.svg#icon-cart" class="product-card__icon"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="production">
+        <div class="production__wrapper">
+          <article class="production-card">
+            <h3 class="production-card__title-top">Процесс производства</h3>
+            <div class="production-card__video-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1050px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+                <source media="(min-width: 1050px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img  class="production-card__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Процес вязания">
+                </picture>
+              <button type="button" class="production-card__play-button" aria-label="Запустить видео">
+                <svg class="production-card__play-icon" width="101" height="77">
+                  <use xlink:href="img/sprite.svg#icon-play"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="production-card__text-wrapper">
+              <p class="production-card__text">По просьбам наших любимых фолловеров мы сняли
+                для вас подробное видео о том, как появляются наши товары.</p>
+              <a href="buy.html" class="production-card__buy button">Сделать заказ</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <svg width="101.615px" height="34.056px" viewBox="0 0 101.615 34.056">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">
+                <svg x="0px" y="0px" width="21.769px" height="21.334px">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+                <span class="visually-hidden">Наш инстаграм</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">
+                <svg width="14.962px" height="27.718px">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+                <span class="visually-hidden">Наш фэйсбук</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://twitter.com/htmlacademy_ru" class="social__link social__link--twitter">
+                <svg x="0px" y="0px" width="23.494px" height="20.168px">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+                <span class="visually-hidden">Наш твиттер</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg width="27px" height="34px">
+              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+            </svg>
+            <span class="visually-hidden">
+              HTML Academy
+            </span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/phone-button.js"></script>
+  </body>
+</html>
