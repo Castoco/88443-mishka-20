@@ -110,11 +110,10 @@ exports.copy = copy;
 
 const del = require("del");
 const clean = () => {
-   return del("build");
+return del("build");
 };
 
 exports.clean = clean;
 
 const build = gulp.series(clean, copy, styles, images, createWebp, sprite, html);
 exports.build = build;
-
