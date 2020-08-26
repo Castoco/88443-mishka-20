@@ -1,0 +1,133 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: @modal-white;
+  display: none; //flex
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__wrapper {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 336px;
+  background-color: @basic-white;
+  box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
+  border: 1px solid @modal-border;
+
+  @media (min-width: @tablet-width) {
+    width: 566px;
+  }
+}
+
+.modal__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  width: 176px;
+  box-sizing: border-box;
+  padding-left: 17px;
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 380px;
+    font-size: 30px;
+    line-height: 57px;
+    margin-top: 38px;
+    padding-left: 14px;
+  }
+}
+
+.modal__text {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  width: 162px;
+  text-align: center;
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 350px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 11px;
+    margin-bottom: 20px;
+  }
+}
+
+.modal__list {
+  margin: 0;
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    width: 350px;
+  }
+}
+
+.modal__item {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @basic-black;
+}
+
+.modal__link {
+  color: @basic-black;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 82px;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px solid @modal-link;
+  outline: none;
+
+  @media (min-width: @tablet-width) {
+    width: 112px;
+  }
+
+  &:hover {
+    border: 2px solid @black-input-active;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid @basic-green-special;
+  }
+}
+
+.modal__button {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @basic-white;
+  background-color: @basic-green;
+  border: none;
+  width: 260px;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 350px;
+  }
+}

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <!-- //Pixel
+    <!-- //PixelPixel
     <style>
       HTML {
         background-repeat: no-repeat;
         background-position:  50% 0;
         /* По умолчанию показывается мобильный макет */
-        background-image: url( "../img/Mobile.png" );
+        background-image: url( "../img/Modal.png" );
       }
       /* Планшет */
       @media ( min-width: 768px ) {
         HTML {
           /* Планшетный макет */
-          background-image: url( "../img/Tablet.png" );
+          background-image: url( "../img/Tablet-modal.png" );
         }
       }
       /* Десктоп */
@@ -26,7 +26,7 @@
     </style>
     <link href="css/styles.css" rel="stylesheet">
     <script src="js/script.js"></script>
-    Pixel Glass Pixel Glass -->
+     Glass Pixel Glass -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
@@ -292,6 +292,24 @@
         </div>
       </div>
     </footer>
+    <section class="modal">
+      <div class="modal__wrapper">
+        <span class="modal__title">Добавить в корзину</span>
+        <p class="modal__text">Выберите размер:</p>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <a class="modal__link" href="s">s</a>
+          </li>
+          <li class="modal__item">
+            <a class="modal__link" href="m">m</a>
+          </li>
+          <li class="modal__item">
+            <a class="modal__link" href="l">l</a>
+          </li>
+        </ul>
+        <button type="button" class="modal__button">Добавить</button>
+      </div>
+    </section>
     <script src="js/phone-button.js"></script>
   </body>
 </html>
