@@ -8,7 +8,7 @@ navToggle.addEventListener('click', function() {
   navMain.classList.toggle('main-nav--closed');
 });
 
-var openModal = document.querySelectorAll('.modal-open');
+var openModal = document.querySelector('.modal-open');
 var modal = document.querySelector('.modal');
 
 openModal.addEventListener('click', function (evt) {
