@@ -145,7 +145,7 @@
             <div class="promo-card__price">
               Цена: 990 руб.
             </div>
-            <a class="promo-card__link-buy button" href="buy.html">
+            <a class="promo-card__link-buy button modal-open" href="buy.html">
               Заказать
             </a>
           </div>
@@ -296,18 +296,15 @@
       <div class="modal__wrapper">
         <span class="modal__title">Добавить в корзину</span>
         <p class="modal__text">Выберите размер:</p>
-        <ul class="modal__list">
-          <li class="modal__item">
-            <a class="modal__link" href="s">s</a>
-          </li>
-          <li class="modal__item">
-            <a class="modal__link" href="m">m</a>
-          </li>
-          <li class="modal__item">
-            <a class="modal__link" href="l">l</a>
-          </li>
-        </ul>
-        <button type="button" class="modal__button">Добавить</button>
+        <form class="modal__list" action="https://echo.htmlacademy.ru" method="post">
+          <input class="modal__link visually-hidden" type="radio" name="size" id="s" value="s" checked>
+          <label class="modal__item" for="s">s</label>
+          <input class="modal__link visually-hidden" type="radio"  name="size" id="m"  value="m">
+          <label class="modal__item" for="m">m</label>
+          <input class="modal__link visually-hidden" type="radio"  name="size" id="l"  value="l">
+          <label class="modal__item" for="l">l</label>
+          <button type="submit" class="modal__button">Добавить</button>
+        </form>
       </div>
     </section>
     <script src="js/phone-button.js"></script>
