@@ -107,7 +107,7 @@
                 <p class="product-card__term">Рост 30 см, вес 200 г</p>
                 <div class="product-card__price">
                   <span>1 200 руб.</span>
-                  <a class="product-card__modal" href="modal.html">
+                  <a class="product-card__modal modal-open" href="modal.html">
                     <svg width="20.294px" height="18.849px" >
                       <use xlink:href="img/sprite.svg#sp-icon-cart" class="product-card__icon"></use>
                     </svg>
@@ -135,7 +135,7 @@
                 <p class="product-card__term">Диаметр 15 см, высота 10 см</p>
                 <div class="product-card__price">
                   <span>690 руб.</span>
-                  <a class="product-card__modal" href="modal.html">
+                  <a class="product-card__modal modal-open" href="modal.html">
                     <svg width="20.294px" height="18.849px" >
                       <use xlink:href="img/sprite.svg#sp-icon-cart" class="product-card__icon"></use>
                     </svg>
@@ -163,7 +163,7 @@
                 <p class="product-card__term">Диаметр 30 см, высота 30 см</p>
                 <div class="product-card__price">
                   <span>1 500 руб.</span>
-                  <a class="product-card__modal" href="modal.html">
+                  <a class="product-card__modal modal-open" href="modal.html">
                     <svg width="20.294px" height="18.849px" >
                       <use xlink:href="img/sprite.svg#sp-icon-cart" class="product-card__icon"></use>
                     </svg>
@@ -250,6 +250,21 @@
         </div>
       </div>
     </footer>
+    <section class="modal">
+      <div class="modal__wrapper">
+        <span class="modal__title">Добавить в корзину</span>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="modal__list" action="https://echo.htmlacademy.ru" method="post">
+          <input class="modal__link visually-hidden" type="radio" name="size" id="s" value="s" checked>
+          <label class="modal__item" for="s">s</label>
+          <input class="modal__link visually-hidden" type="radio"  name="size" id="m"  value="m">
+          <label class="modal__item" for="m">m</label>
+          <input class="modal__link visually-hidden" type="radio"  name="size" id="l"  value="l">
+          <label class="modal__item" for="l">l</label>
+          <button type="submit" class="modal__button">Добавить</button>
+        </form>
+      </div>
+    </section>
     <script src="js/phone-button.js"></script>
   </body>
 </html>
