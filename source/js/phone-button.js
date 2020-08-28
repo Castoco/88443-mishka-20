@@ -8,15 +8,17 @@ navToggle.addEventListener('click', function() {
   navMain.classList.toggle('main-nav--closed');
 });
 
-var openModal = document.querySelector('.modal-open');
+var buttons = document.querySelectorAll('.modal-open');
 var modal = document.querySelector('.modal');
 
-openModal.addEventListener('click', function (evt) {
+buttons.forEach(function(links) {
+links.addEventListener('click', function (evt) {
   evt.preventDefault();
   modal.classList.add('modal__open');
 });
+});
 
-modal.addEventListener('click', function (evt) {
+modal.addEventListener('click', function () {
   event.target.classList.remove('modal__open');
 });
 
