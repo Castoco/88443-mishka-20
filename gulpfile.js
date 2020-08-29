@@ -62,6 +62,25 @@ exports.default = gulp.series(
   styles, html, server, watcher
 );
 
+//htmlmin
+const htmlmin = require('gulp-htmlmin');
+
+const minhtml = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'))
+    .pipe(sync.stream());
+};
+
+//js min
+var uglify = require('gulp-uglify');
+
+const compress = () => {
+  return gulp.src('source/js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('build/js'));
+};
+
 
 // images
 const imagemin = require("gulp-imagemin");
@@ -116,5 +135,5 @@ return del("build");
 
 exports.clean = clean;
 
-const build = gulp.series(clean, copy, styles, images, createWebp, sprite, html);
+const build = gulp.series(clean, copy, styles, images, createWebp, sprite, minhtml, compress);
 exports.build = build;
