@@ -1,32 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-  <!-- //Pixel Glass
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию показывается мобильный макет */
-        background-image: url( "../img/forma-Mobile.png" );
-      }
-      /* Планшет */
-      @media ( min-width: 768px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url( "../img/Tablet-form.png" );
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 1050px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url( "img/960.png" );
-        }
-      }
-    </style>
-    <link href="css/styles.css" rel="stylesheet">
-    <script src="js/script.js"></script>
-  Pixel Glass -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
@@ -38,7 +12,7 @@
     <header class="page-header">
       <nav class="main-nav main-nav--opened">
         <a class="main-nav__logo" href="index.html">
-          <svg width="85" heigth="35">
+          <svg width="85">
             <use xlink:href="img/sprite.svg#sp-logo-mobile" class="main-nav__logo-mobile"></use>
             <use xlink:href="img/sprite.svg#sp-logo-tablet" class="main-nav__logo-tablet"></use>
             <use xlink:href="img/sprite.svg#sp-logo-desktop" class="main-nav__logo-desktop"></use>
@@ -154,7 +128,7 @@
           </fieldset>
           <div class="form__fieldset-wrapper form__fieldset-wrapper--contacts">
             <fieldset class="form__fieldset">
-              <label class="form__legend--phone" for="phone-number">Тел</label>
+              <label class="form__legend form__legend--phone" for="phone-number">Тел</label>
               <input type="tel" class="form__input form__input--text form__input--contacts" name="phone" id="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required maxlength="15">
               <div class="form__icon-phone">
                 <svg width="24.829px" height="24.333px">
@@ -163,7 +137,7 @@
               </div>
             </fieldset>
             <fieldset class="form__fieldset">
-              <label class="form__legend--mail" for="e-mail">E-mail</label>
+              <label class="form__legend form__legend--mail" for="e-mail">E-mail</label>
               <input type="email" class="form__input form__input--text form__input--contacts" name="mail" id="e-mail" placeholder="Ваш Email*" required maxlength="30">
               <div class="form__icon-mail">
                 <svg width="32px" height="32px">
@@ -173,7 +147,7 @@
             </fieldset>
           </div>
           <fieldset class="form__fieldset form__fieldset--textarea">
-            <label class="form__legend--text">Доп</label>
+            <label class="form__legend form__legend--text">Доп</label>
             <textarea class="form__input form__input--text-message" name="text-message" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <div class="form__footer">
